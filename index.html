@@ -29,12 +29,19 @@
             <img class="foot" src="image copy 4.png" alt="Footer Banner">
         </a>
     </footer>
-       <script>
-    const maintag = document.getElementById('maintag');
-    maintag.addEventListener('click', function() {
-        // Change to second image when clicked
-        maintag.src = 'image copy 5.png';
-    });
-</script>
+
+    <!-- ✅ JavaScript -->
+    <script>
+        // Select all images with class "maintag"
+        const images = document.querySelectorAll('.maintag');
+
+        images.forEach(img => {
+            img.addEventListener('click', function() {
+                // Jab image pe click ho to new page open karo
+                window.open('newpage.html', '_blank');
+            });
+        });
+    </script>
+
 </body>
 </html>
